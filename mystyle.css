@@ -1,0 +1,131 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	line-height: 1.4;
+}
+.nav{
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	background-color: rgb(125, 118, 99);
+	width: 100%;
+}
+#nav-link{
+	list-style: none;
+	display: flex;
+	font-size: 24px;
+}
+.navlist{
+	margin-right: 2rem;
+}
+.navlist a{
+	padding: 2rem;
+	display: block;
+	color: #FFF;
+}
+a{
+	text-decoration: none;
+
+}
+h1{
+	font-size: 3rem;
+	font-weight: 800;
+}
+h2{
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+.welcome-section > p{
+	font-style: italic;
+	font-size: 2.4rem;
+	font-weight: 200;
+}
+#welcome-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(75deg, rgba(159, 98, 96, 0.3), rgba(34, 43, 42, 0.6));
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+}
+
+.projects{
+	padding: 6rem 2rem;
+}
+.project-section-header{
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 6rem;
+}
+.project-table{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4rem;
+  	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 6rem;
+}
+.project-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.project-title{
+	color: #FFF;
+	background-color: #000;
+	text-align: center;
+	width: 100%;
+	font-size: 2rem;
+}
+.contact{
+	background-color: #000;
+	color: #FFF;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.contact > div > p{
+	text-align: center;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+.contact-format{
+	font-size: 2rem;
+	padding: 2rem;
+	text-align: center;
+}
+.contact-format a{
+	margin-right: 1.5rem;
+	color: #FFF;
+	font-weight: 200;
+}
+footer{
+	border-top: 4px solid rgb(125, 118, 99);
+	text-align: right;
+	padding: 2rem;
+}
+@media (max-width: 900px){
+	#welcome-section > p{
+		font-size: 2rem;
+	}
+	h2{
+		font-size: 2rem;
+	}
+	.contact > .contact-format a{
+		display: flex;
+		flex-direction: column;
+	}
+	.contact{
+		height: 100%;
+	}
+}
